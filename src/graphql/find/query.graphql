@@ -1,0 +1,158 @@
+query latestToken {
+  tokens(first:1, orderBy: timestamp, orderDirection: desc) {
+    id
+    symbol
+    name
+    timestamp
+    onft {
+        id
+    }
+    cnft {
+        id
+    }
+  }
+}
+
+query collectFeeHistories($cnftId: String!) {
+  collectOspUniswapLPFeeHistories(where: {cnft: $cnftId}, orderBy: timestamp, orderDirection: desc) {
+    id
+    cTokenAmount
+    oTokenAmount
+    timestamp
+  }
+}
+
+query allTokens {
+  tokens(first: 1000) {
+    id
+    projectId
+    name
+    symbol
+    stars
+    pool {
+        id
+        token0
+        token1
+    }
+    IsClaimed
+    onft {
+        id
+        owner
+        collectedIncomeTokenAmount
+    }
+    cnft {
+        id
+        owner
+        collectedIncomeTokenAmount
+    }
+    timestamp
+  }
+}
+
+query tokensByAddresses($addresses: [ID!]) {
+  tokens(first: 1000, where: {id_in: $addresses}) {
+    id
+    projectId
+    name
+    symbol
+    stars
+    pool {
+        id
+        token0
+        token1
+    }
+    IsClaimed
+    onft {
+        id
+        owner
+        collectedIncomeTokenAmount
+    }
+    cnft {
+        id
+        owner
+        collectedIncomeTokenAmount
+    }
+    timestamp
+  }
+}
+
+query tokenDetail($address: ID!) {
+  token(id: $address) {
+    id
+    projectId
+    name
+    symbol
+    stars
+    pool {
+        id
+        token0
+        token1
+    }
+    IsClaimed
+    onft {
+        id
+        owner
+        collectedIncomeTokenAmount
+    }
+    cnft {
+        id
+        owner
+        collectedIncomeTokenAmount
+    }
+    timestamp
+  }
+  finderStat(id: $address) {
+    id
+    finderCount
+  }
+}
+
+query operationHistoriesByUser($user: Bytes!) {
+  operationHistories(where: {user: $user}, orderBy: timestamp, orderDirection: desc) {
+    id
+    user
+    type
+    mortgage {
+      id
+      user
+      ospAsset
+      inOspAmount
+      outFindAmount
+      amountOut
+      tokenOut
+      timestamp
+    }
+    redeem {
+      id
+      user
+      ospAsset
+      inFindAmount
+      amountIn
+      tokenIn
+      outOspAmount
+      timestamp
+    }
+    cash {
+      id
+      amountOut
+      ospAsset
+      outFindAmount
+      outOspPositionAmount
+      tokenOut
+      timestamp
+      user
+    }
+    multiply {
+      id
+      user
+      ospAsset
+      ospAmount
+      payFindAmount
+      tokenPay
+      amountNeedPay
+      AllFindAmount
+      timestamp
+    }
+    timestamp
+  }
+}

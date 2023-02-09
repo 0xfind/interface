@@ -1,0 +1,176 @@
+query ethPrices($block24: Int!, $block48: Int!, $blockWeek: Int!){
+  current: bundles(first: 1, subgraphError: allow) {
+    ethPriceUSD
+  }
+  oneDay: bundles(first: 1, block: { number: $block24 }, subgraphError: allow) {
+    ethPriceUSD
+  }
+  twoDay: bundles(first: 1, block: { number: $block48 }, subgraphError: allow) {
+    ethPriceUSD
+  }
+  oneWeek: bundles(first: 1, block: { number: $blockWeek }, subgraphError: allow) {
+    ethPriceUSD
+  }
+}
+
+query getTokens($ids: [ID!], $block24: Int!, $block48: Int!, $blockWeek: Int!){
+  tokens(where: {id_in: $ids}, orderBy: totalValueLockedUSD, orderDirection: desc) {
+    id
+    symbol
+    name
+    derivedETH
+    volumeUSD
+    volume
+    txCount
+    totalValueLocked
+    feesUSD
+    totalValueLockedUSD
+    whitelistPools {
+      totalValueLockedToken0
+      totalValueLockedToken1
+      token0 {
+        id
+        name
+        symbol
+        decimals
+      }
+      token1 {
+        id
+        name
+        symbol
+        decimals
+      }
+      ticks {
+        liquidityNet
+        liquidityGross
+        tickIdx
+      }
+      id
+      liquidity
+      sqrtPrice
+      tick
+    }
+  }
+  token24: tokens(where: {id_in: $ids}, block: {number: $block24}, orderBy: totalValueLockedUSD, orderDirection: desc) {
+    id
+    symbol
+    name
+    derivedETH
+    volumeUSD
+    volume
+    txCount
+    totalValueLocked
+    feesUSD
+    totalValueLockedUSD
+    whitelistPools {
+      totalValueLockedToken0
+      totalValueLockedToken1
+      token0 {
+        id
+      }
+      token1 {
+        id
+      }
+      id
+    }
+  }
+  token48: tokens(where: {id_in: $ids}, block: {number: $block48}, orderBy: totalValueLockedUSD, orderDirection: desc) {
+    id
+    symbol
+    name
+    derivedETH
+    volumeUSD
+    volume
+    txCount
+    totalValueLocked
+    feesUSD
+    totalValueLockedUSD
+    whitelistPools {
+      totalValueLockedToken0
+      totalValueLockedToken1
+      token0 {
+        id
+      }
+      token1 {
+        id
+      }
+      id
+    }
+  }
+  tokenWeek: tokens(where: {id_in: $ids}, block: {number: $blockWeek}, orderBy: totalValueLockedUSD, orderDirection: desc) {
+    id
+    symbol
+    name
+    derivedETH
+    volumeUSD
+    volume
+    txCount
+    totalValueLocked
+    feesUSD
+    totalValueLockedUSD
+    whitelistPools {
+      totalValueLockedToken0
+      totalValueLockedToken1
+      token0 {
+        id
+      }
+      token1 {
+        id
+      }
+      id
+    }
+  }
+}
+
+query getPool($pool: ID!) {
+  pool(id: $pool) {
+    id
+    feeTier
+    token0 {
+      name
+      symbol
+      id
+      decimals
+      derivedETH
+    }
+    token1 {
+      name
+      symbol
+      id
+      decimals
+      derivedETH
+    }
+    feesUSD
+    collectedFeesUSD
+    liquidity
+    sqrtPrice
+    tick
+    ticks {
+      liquidityNet
+      liquidityGross
+      tickIdx
+    }
+    volumeUSD
+    totalValueLockedUSD
+    token0Price
+    token1Price
+    totalValueLockedToken0
+    totalValueLockedToken1
+  }
+}
+
+query ethPrice {
+  bundles(first: 1, subgraphError: allow) {
+    ethPriceUSD
+  }
+}
+
+query getToken($id: ID!) {
+  token(id: $id) {
+    id
+    name
+    symbol
+    derivedETH
+    decimals
+  }
+}

@@ -1,0 +1,771 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2022-05-07 12:14+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "#{0} is a fantastic open source project, #Harberger #Token has been created to invest {1} now! #Opensource"
+msgstr "#{0} is a fantastic open source project, #Harberger #Token has been created to invest {1} now! #Opensource"
+
+#: src/pages/claim/index.tsx
+msgid "1. Add the file \".github/FUNDING.yml\" to the default branch of the Github Repo."
+msgstr "1. Add the file \".github/FUNDING.yml\" to the default branch of the Github Repo."
+
+#: src/pages/claim/index.tsx
+msgid "2. Format it as follows"
+msgstr "2. Format it as follows"
+
+#: src/pages/detail/index.tsx
+msgid "24h Fees"
+msgstr "24h Fees"
+
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+msgid "24h Trading Vol"
+msgstr "24h Trading Vol"
+
+#: src/pages/claim/index.tsx
+msgid "3. Once added, the link will be displayed under \"Sponsor this project\" on the right side of the Github Repo"
+msgstr "3. Once added, the link will be displayed under \"Sponsor this project\" on the right side of the Github Repo"
+
+#: src/pages/detail/index.tsx
+msgid "7d Trading Vol"
+msgstr "7d Trading Vol"
+
+#: src/pages/claim/index.tsx
+msgid "@HarbergerToken We decided to claim #{0} officially, thank you for your appreciation and support of {1}, let's create a future together! #Harberger #Opensource #Token"
+msgstr "@HarbergerToken We decided to claim #{0} officially, thank you for your appreciation and support of {1}, let's create a future together! #Harberger #Opensource #Token"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Add a sponsor"
+msgstr "Add a sponsor"
+
+#: src/pages/assets/index.tsx
+msgid "After multiply, the position is obtained."
+msgstr "After multiply, the position is obtained."
+
+#: src/pages/assets/index.tsx
+msgid "All HBG tokens"
+msgstr "All HBG tokens"
+
+#: src/pages/claim/index.tsx
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "All {OSP_INIT_EXCHANGE} HBG tokens are added to the Uniswap {OSP_POOL_FEE_PERCENT} pool on a single formula and will be never withdrawn."
+msgstr "All {OSP_INIT_EXCHANGE} HBG tokens are added to the Uniswap {OSP_POOL_FEE_PERCENT} pool on a single formula and will be never withdrawn."
+
+#: src/pages/assets/index.tsx
+msgid "Amount"
+msgstr "Amount"
+
+#: src/pages/create/index.tsx
+msgid "And as {0} price finder first, you'll be pleased to have more people invest in it!"
+msgstr "And as {0} price finder first, you'll be pleased to have more people invest in it!"
+
+#: src/components/Button/Approve.tsx
+msgid "Approve"
+msgstr "Approve"
+
+#: src/pages/create/index.tsx
+msgid "As an incentive, Create NFT are currently created with a limited time discount, based on the Ethereum gas price, but the discount will not exceed the nft price."
+msgstr "As an incentive, Create NFT are currently created with a limited time discount, based on the Ethereum gas price, but the discount will not exceed the nft price."
+
+#: src/pages/create/index.tsx
+msgid "As the exchange rate between ${0} and $FIND can fluctuate significantly, a {1}% redundancy is added here."
+msgstr "As the exchange rate between ${0} and $FIND can fluctuate significantly, a {1}% redundancy is added here."
+
+#: src/components/Table/Mortgage.tsx
+msgid "Asset"
+msgstr "Asset"
+
+#: src/components/Navbar/Left.tsx
+msgid "Assets"
+msgstr "Assets"
+
+#: src/components/Navbar/index.tsx
+msgid "Back to home"
+msgstr "Back to home"
+
+#: src/pages/create/index.tsx
+msgid "Back to homepage"
+msgstr "Back to homepage"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Balance:"
+msgstr "Balance:"
+
+#: src/pages/claim/index.tsx
+msgid "Before claiming, please do the following"
+msgstr "Before claiming, please do the following"
+
+#: src/components/Table/home.tsx
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+msgid "Buy"
+msgstr "Buy"
+
+#: src/pages/assets/index.tsx
+msgid "Calculated using the all HBG token"
+msgstr "Calculated using the all HBG token"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Cash"
+msgstr "Cash"
+
+#: src/pages/assets/index.tsx
+msgid "Cash operations will close out the entered collateral."
+msgstr "Cash operations will close out the entered collateral."
+
+#: src/pages/assets/index.tsx
+msgid "Cash out"
+msgstr "Cash out"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Change"
+msgstr "Change"
+
+#: src/components/Table/home.tsx
+#: src/components/Table/home.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Claim"
+msgstr "Claim"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Claim NFT"
+msgstr "Claim NFT"
+
+#: src/pages/claim/index.tsx
+msgid "Claim expired, please try again"
+msgstr "Claim expired, please try again"
+
+#: src/pages/claim/index.tsx
+msgid "Claimed successfully"
+msgstr "Claimed successfully"
+
+#: src/pages/assets/index.tsx
+msgid "Collateral"
+msgstr "Collateral"
+
+#: src/components/Table/Mortgage.tsx
+msgid "Collateral Locked"
+msgstr "Collateral Locked"
+
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Collect"
+msgstr "Collect"
+
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Collectable income"
+msgstr "Collectable income"
+
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Collected"
+msgstr "Collected"
+
+#: src/components/Navbar/Left.tsx
+#: src/components/Navbar/MobileMenu.tsx
+msgid "Community"
+msgstr "Community"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Confirm"
+msgstr "Confirm"
+
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Connect"
+msgstr "Connect"
+
+#: src/components/Button/ConnectWallet.tsx
+#: src/components/Navbar/BarWallet.tsx
+msgid "Connect Wallet"
+msgstr "Connect Wallet"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Connect to a wallet"
+msgstr "Connect to a wallet"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Connected with"
+msgstr "Connected with"
+
+#: src/components/Button/Common.tsx
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+msgid "Create"
+msgstr "Create"
+
+#: src/pages/home/Search.tsx
+#: src/pages/home/index.tsx
+msgid "Create HBG token"
+msgstr "Create HBG token"
+
+#: src/pages/create/index.tsx
+msgid "Create HBG token, hard top: {OSP_INIT_EXCHANGE}."
+msgstr "Create HBG token, hard top: {OSP_INIT_EXCHANGE}."
+
+#: src/components/Table/home.tsx
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Create NFT"
+msgstr "Create NFT"
+
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Create NFT and Owner NFT are created at the same time."
+msgstr "Create NFT and Owner NFT are created at the same time."
+
+#: src/components/Table/home.tsx
+msgid "Create NFT is created when the HBG token is created, and is owned by the creator for the cost of the HBG's GitHub star * 0.1$FIND, and Open source projects can be free, and the holder has the right to collect {OSP_CNFT_PERCENT} LP fee permanently."
+msgstr "Create NFT is created when the HBG token is created, and is owned by the creator for the cost of the HBG's GitHub star * 0.1$FIND, and Open source projects can be free, and the holder has the right to collect {OSP_CNFT_PERCENT} LP fee permanently."
+
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Create NFT is owned by the creator for the cost of the HBG's GitHub star * 0.1$FIND, and Open source projects can be free, and the holder has the right to collect {OSP_CNFT_PERCENT} LP fee permanently."
+msgstr "Create NFT is owned by the creator for the cost of the HBG's GitHub star * 0.1$FIND, and Open source projects can be free, and the holder has the right to collect {OSP_CNFT_PERCENT} LP fee permanently."
+
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+msgid "Create NFT price"
+msgstr "Create NFT price"
+
+#: src/components/Navbar/index.tsx
+msgid "Created successfully!"
+msgstr "Created successfully!"
+
+#: src/pages/create/index.tsx
+msgid "Creation completed!"
+msgstr "Creation completed!"
+
+#: src/components/Box/NoticeContent.tsx
+msgid "Deals Completed"
+msgstr "Deals Completed"
+
+#: src/components/Table/Mortgage.tsx
+msgid "Debt"
+msgstr "Debt"
+
+#: src/pages/assets/index.tsx
+msgid "Deposit Positions"
+msgstr "Deposit Positions"
+
+#: src/pages/claim/index.tsx
+msgid "Detail steps"
+msgstr "Detail steps"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Disconnect"
+msgstr "Disconnect"
+
+#: src/components/Navbar/Left.tsx
+#: src/components/Navbar/MobileMenu.tsx
+msgid "Doc"
+msgstr "Doc"
+
+#: src/components/Table/Mortgage.tsx
+msgid "Earning"
+msgstr "Earning"
+
+#: src/pages/assets/index.tsx
+msgid "Earning:"
+msgstr "Earning:"
+
+#: src/pages/detail/index.tsx
+msgid "Edit"
+msgstr "Edit"
+
+#: src/pages/claim/index.tsx
+msgid "Example:"
+msgstr "Example:"
+
+#: src/pages/detail/index.tsx
+msgid "Finder"
+msgstr "Finder"
+
+#: src/pages/create/index.tsx
+msgid "Free for owner"
+msgstr "Free for owner"
+
+#: src/pages/detail/index.tsx
+msgid "Go"
+msgstr "Go"
+
+#: src/components/Box/Status.tsx
+msgid "Go Back Home"
+msgstr "Go Back Home"
+
+#: src/pages/claim/index.tsx
+#: src/pages/create/index.tsx
+msgid "Go to"
+msgstr "Go to"
+
+#: src/pages/create/index.tsx
+msgid "Go to the HBG token"
+msgstr "Go to the HBG token"
+
+#: src/pages/claim/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Hard top: {OSP_INIT_EXCHANGE}."
+msgstr "Hard top: {OSP_INIT_EXCHANGE}."
+
+#: src/pages/claim/index.tsx
+msgid "Here"
+msgstr "Here"
+
+#: src/components/Dialog/History.tsx
+#: src/components/Dialog/History.tsx
+msgid "History"
+msgstr "History"
+
+#: src/pages/assets/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "History List"
+msgstr "History List"
+
+#: src/pages/claim/index.tsx
+msgid "How to claim Owner NFT?"
+msgstr "How to claim Owner NFT?"
+
+#: src/components/Link/Common.tsx
+#: src/pages/create/index.tsx
+msgid "How to create an HBG token?"
+msgstr "How to create an HBG token?"
+
+#: src/pages/claim/index.tsx
+msgid "I  Click \"Claim\" button, finish the last step."
+msgstr "I  Click \"Claim\" button, finish the last step."
+
+#: src/pages/claim/index.tsx
+msgid "I  Click the \"Connect Wallet\" button."
+msgstr "I  Click the \"Connect Wallet\" button."
+
+#: src/pages/claim/index.tsx
+msgid "I Click on the link  <0>https://discord.gg/BYEDPc9KXT</0> and enter to Discord."
+msgstr "I Click on the link  <0>https://discord.gg/BYEDPc9KXT</0> and enter to Discord."
+
+#: src/pages/claim/index.tsx
+msgid "I Click the twitter botton and @HarbergerToken in Twitter."
+msgstr "I Click the twitter botton and @HarbergerToken in Twitter."
+
+#: src/pages/detail/index.tsx
+msgid "I You can edit the README file and change the text here."
+msgstr "I You can edit the README file and change the text here."
+
+#: src/pages/claim/index.tsx
+msgid "II Copy and paste the tweet link URL, and Click the \"Verify\" button."
+msgstr "II Copy and paste the tweet link URL, and Click the \"Verify\" button."
+
+#: src/pages/claim/index.tsx
+msgid "II Copy the ID below and go to the <0>#get-verified</0> channel to complete the Discord verification step of the claiming Owner NFT process."
+msgstr "II Copy the ID below and go to the <0>#get-verified</0> channel to complete the Discord verification step of the claiming Owner NFT process."
+
+#: src/pages/detail/index.tsx
+msgid "II Enter text in the description, and text with [ ] express as title."
+msgstr "II Enter text in the description, and text with [ ] express as title."
+
+#: src/pages/claim/index.tsx
+msgid "II Quote the link below and add it to the Sponsor list of the GitHub Repo corresponding to the current HBG token"
+msgstr "II Quote the link below and add it to the Sponsor list of the GitHub Repo corresponding to the current HBG token"
+
+#: src/pages/claim/index.tsx
+msgid "III  Click the \"Verify\" button."
+msgstr "III  Click the \"Verify\" button."
+
+#: src/pages/claim/index.tsx
+msgid "III When finished, click \"Verify\" button."
+msgstr "III When finished, click \"Verify\" button."
+
+#: src/pages/create/index.tsx
+msgid "If the number of stars is less than 30, then calculate by 30 stars * 0.1$FIND"
+msgstr "If the number of stars is less than 30, then calculate by 30 stars * 0.1$FIND"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/create/index.tsx
+msgid "Insufficient Balance"
+msgstr "Insufficient Balance"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Insufficient Collateral Locked"
+msgstr "Insufficient Collateral Locked"
+
+#: src/pages/assets/index.tsx
+msgid "It is characterized by no forced closing, no interest, no time limit, and risk-free."
+msgstr "It is characterized by no forced closing, no interest, no time limit, and risk-free."
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "It seems your wallet is running on a different network from harberger.money. please manually change the network in your wallet, or you can click the button below."
+msgstr "It seems your wallet is running on a different network from harberger.money. please manually change the network in your wallet, or you can click the button below."
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Join Discord"
+msgstr "Join Discord"
+
+#: src/pages/assets/index.tsx
+msgid "Lend out"
+msgstr "Lend out"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Locked:"
+msgstr "Locked:"
+
+#: src/pages/assets/index.tsx
+msgid "Manage Your Assets"
+msgstr "Manage Your Assets"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Maximum"
+msgstr "Maximum"
+
+#: src/pages/assets/index.tsx
+#: src/pages/create/index.tsx
+msgid "Maximum multiplier"
+msgstr "Maximum multiplier"
+
+#: src/components/Navbar/MobileMenu.tsx
+#: src/components/Navbar/index.tsx
+msgid "Menu"
+msgstr "Menu"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Mortgage"
+msgstr "Mortgage"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Multiply"
+msgstr "Multiply"
+
+#: src/pages/create/index.tsx
+msgid "Multiply token (option)"
+msgstr "Multiply token (option)"
+
+#: src/pages/create/index.tsx
+msgid "NFT Discount:"
+msgstr "NFT Discount:"
+
+#: src/components/Table/home.tsx
+msgid "Name"
+msgstr "Name"
+
+#: src/pages/claim/index.tsx
+msgid "Next"
+msgstr "Next"
+
+#: src/pages/assets/index.tsx
+msgid "No Earning"
+msgstr "No Earning"
+
+#: src/pages/create/index.tsx
+msgid "Only the owner of an HBG project can get Create NFT for free."
+msgstr "Only the owner of an HBG project can get Create NFT for free."
+
+#: src/components/Box/Status.tsx
+msgid "Oops, This Page Not Found!"
+msgstr "Oops, This Page Not Found!"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Oops, your wallet is not on the right network"
+msgstr "Oops, your wallet is not on the right network"
+
+#: src/components/Table/home.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Open source projects are eligible to claim Owner NFT for free and thus have the right to {OSP_ONFT_PERCENT} LP fee in permanently."
+msgstr "Open source projects are eligible to claim Owner NFT for free and thus have the right to {OSP_ONFT_PERCENT} LP fee in permanently."
+
+#: src/pages/claim/index.tsx
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Opensea"
+msgstr "Opensea"
+
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+msgid "Original Price:"
+msgstr "Original Price:"
+
+#: src/components/Table/home.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Owner NFT"
+msgstr "Owner NFT"
+
+#: src/pages/detail/index.tsx
+msgid "Owner NFT holder collectable {OSP_ONFT_PERCENT} LP fees"
+msgstr "Owner NFT holder collectable {OSP_ONFT_PERCENT} LP fees"
+
+#: src/components/Select/Common.tsx
+#: src/components/Select/Common.tsx
+#: src/components/Select/Common.tsx
+msgid "Please enter Github URL first"
+msgstr "Please enter Github URL first"
+
+#: src/components/Input/Common.tsx
+msgid "Please enter a GitHub URL, e.g. http//github.com/0xfind/0xfind"
+msgstr "Please enter a GitHub URL, e.g. http//github.com/0xfind/0xfind"
+
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+msgid "Please enter a valid GitHub URL"
+msgstr "Please enter a valid GitHub URL"
+
+#: src/pages/create/index.tsx
+msgid "Please use this feature only if you clearly understand the transaction details of multiply."
+msgstr "Please use this feature only if you clearly understand the transaction details of multiply."
+
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+msgid "Price"
+msgstr "Price"
+
+#: src/components/Table/home.tsx
+msgid "Price Change"
+msgstr "Price Change"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Redeem"
+msgstr "Redeem"
+
+#: src/pages/assets/index.tsx
+msgid "Repay"
+msgstr "Repay"
+
+#: src/pages/assets/index.tsx
+msgid "Risk-free definition: public chain ( Ethereum etc. ) trusted, Uniswap trusted, 0xfind smart contract no bugs."
+msgstr "Risk-free definition: public chain ( Ethereum etc. ) trusted, Uniswap trusted, 0xfind smart contract no bugs."
+
+#: src/components/Dialog/SelectToken.tsx
+msgid "Search name or paste address"
+msgstr "Search name or paste address"
+
+#: src/pages/home/Search.tsx
+msgid "Search..."
+msgstr "Search..."
+
+#: src/components/Input/Asset.tsx
+msgid "Select a token"
+msgstr "Select a token"
+
+#: src/components/Dialog/SelectToken.tsx
+msgid "Select token"
+msgstr "Select token"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Sorry, claiming fail!"
+msgstr "Sorry, claiming fail!"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Swap"
+msgstr "Swap"
+
+#: src/components/Navbar/MobileMenu.tsx
+msgid "Swarm Invest"
+msgstr "Swarm Invest"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Switch Network"
+msgstr "Switch Network"
+
+#: src/components/Card/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "TVL"
+msgstr "TVL"
+
+#: src/components/Card/index.tsx
+msgid "The HBG token has been claimed by the open source project owner"
+msgstr "The HBG token has been claimed by the open source project owner"
+
+#: src/components/Box/Status.tsx
+msgid "The link might be incorrect"
+msgstr "The link might be incorrect"
+
+#: src/components/Table/home.tsx
+msgid "The requested content has not yet been created, please try again in a few moments."
+msgstr "The requested content has not yet been created, please try again in a few moments."
+
+#: src/components/Select/Common.tsx
+msgid "The same Token name already exists, would you consider replacing it?"
+msgstr "The same Token name already exists, would you consider replacing it?"
+
+#: src/components/Select/Common.tsx
+msgid "The same token name already exists, would you consider replacing it?"
+msgstr "The same token name already exists, would you consider replacing it?"
+
+#: src/pages/create/index.tsx
+msgid "The token name is automatically generated, with 0x as the prefix and Github org/repo as the suffix"
+msgstr "The token name is automatically generated, with 0x as the prefix and Github org/repo as the suffix"
+
+#: src/pages/assets/index.tsx
+msgid "There is no HBG token"
+msgstr "There is no HBG token"
+
+#: src/components/Dialog/History.tsx
+#: src/components/Dialog/History.tsx
+msgid "There is no history"
+msgstr "There is no history"
+
+#: src/components/Table/Mortgage.tsx
+msgid "There is no position"
+msgstr "There is no position"
+
+#: src/components/Dialog/SelectToken.tsx
+msgid "There is no token"
+msgstr "There is no token"
+
+#: src/pages/create/index.tsx
+msgid "This repository has already been created"
+msgstr "This repository has already been created"
+
+#: src/pages/create/index.tsx
+msgid "Token name"
+msgstr "Token name"
+
+#: src/pages/assets/index.tsx
+msgid "Total Assets"
+msgstr "Total Assets"
+
+#: src/pages/assets/index.tsx
+msgid "Total Earning:"
+msgstr "Total Earning:"
+
+#: src/components/Card/index.tsx
+msgid "Total HBG"
+msgstr "Total HBG"
+
+#: src/pages/create/index.tsx
+msgid "Total amount:"
+msgstr "Total amount:"
+
+#: src/components/Navbar/Left.tsx
+msgid "Tutorial"
+msgstr "Tutorial"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Tweets"
+msgstr "Tweets"
+
+#: src/pages/detail/index.tsx
+msgid "Uniswap"
+msgstr "Uniswap"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Verification failed, please try again later."
+msgstr "Verification failed, please try again later."
+
+#: src/pages/claim/index.tsx
+msgid "Verification success"
+msgstr "Verification success"
+
+#: src/components/Box/Claim.tsx
+msgid "Verify"
+msgstr "Verify"
+
+#: src/components/Navbar/Left.tsx
+msgid "White Paper"
+msgstr "White Paper"
+
+#: src/pages/assets/index.tsx
+msgid "Withdraw"
+msgstr "Withdraw"
+
+#: src/pages/assets/index.tsx
+msgid "You can combine the two transactions of redeeming HBG and then selling HBG into one Cash operation, so you can cash out even if you don't have $ETH and $FIND."
+msgstr "You can combine the two transactions of redeeming HBG and then selling HBG into one Cash operation, so you can cash out even if you don't have $ETH and $FIND."
+
+#: src/pages/detail/index.tsx
+msgid "You can invest in the Harbeger token of this project!"
+msgstr "You can invest in the Harbeger token of this project!"
+
+#: src/pages/assets/index.tsx
+msgid "You can mortgage HBG token to lend $ETH or $FIND for a 0.5% fee."
+msgstr "You can mortgage HBG token to lend $ETH or $FIND for a 0.5% fee."
+
+#: src/pages/assets/index.tsx
+msgid "You can mortgage to get $ETH or $FIND, buy HBG again and keep repeating this operation. multiply combines such operations into one to save a lot of gas fee."
+msgstr "You can mortgage to get $ETH or $FIND, buy HBG again and keep repeating this operation. multiply combines such operations into one to save a lot of gas fee."
+
+#: src/pages/assets/index.tsx
+msgid "You can repay $ETH or $FIND and withdraw the mortgaged HBG tokens."
+msgstr "You can repay $ETH or $FIND and withdraw the mortgaged HBG tokens."
+
+#: src/pages/claim/index.tsx
+msgid "e.g.https://twitter.com/HarbergerToken/status/1234567890123456789"
+msgstr "e.g.https://twitter.com/HarbergerToken/status/1234567890123456789"
+
+#: src/pages/create/index.tsx
+msgid "example"
+msgstr "example"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "get"
+msgstr "get"
+
+#: src/components/Button/Approve.tsx
+#: src/pages/assets/index.tsx
+msgid "transaction link"
+msgstr "transaction link"

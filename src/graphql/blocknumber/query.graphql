@@ -1,0 +1,11 @@
+query getBlocks($timestamp24G: BigInt!, $timestamp24L: BigInt!, $timestamp48G: BigInt!, $timestamp48L: BigInt!, $timestampWeekG: BigInt!, $timestampWeekL: BigInt!){
+  block24: blocks(first: 1, orderBy: timestamp, orderDirection: desc, where: { timestamp_gt: $timestamp24G, timestamp_lt: $timestamp24L }) {
+    number
+  }
+  block48: blocks(first: 1, orderBy: timestamp, orderDirection: desc, where: { timestamp_gt: $timestamp48G, timestamp_lt: $timestamp48L }) {
+    number
+  }
+  blockWeek: blocks(first: 1, orderBy: timestamp, orderDirection: desc, where: { timestamp_gt: $timestampWeekG, timestamp_lt: $timestampWeekL }) {
+    number
+  }
+}

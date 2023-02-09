@@ -1,0 +1,771 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2022-05-07 12:14+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: zh\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "#{0} is a fantastic open source project, #Harberger #Token has been created to invest {1} now! #Opensource"
+msgstr "#{0} 是一个非常棒的开源项目，#Harberger #Token 已经创建，可以投资 {1} 了！#Opensource"
+
+#: src/pages/claim/index.tsx
+msgid "1. Add the file \".github/FUNDING.yml\" to the default branch of the Github Repo."
+msgstr "1. 在 Github Repo 默认分支下增加 “.github/FUNDING.yml”文件"
+
+#: src/pages/claim/index.tsx
+msgid "2. Format it as follows"
+msgstr "2. 格式如下"
+
+#: src/pages/detail/index.tsx
+msgid "24h Fees"
+msgstr "24h Fees"
+
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+msgid "24h Trading Vol"
+msgstr "24h Trading Vol"
+
+#: src/pages/claim/index.tsx
+msgid "3. Once added, the link will be displayed under \"Sponsor this project\" on the right side of the Github Repo"
+msgstr "3. 添加后，链接将显示在 Github Repo 右侧的 “Sponsor this project” 列表下。"
+
+#: src/pages/detail/index.tsx
+msgid "7d Trading Vol"
+msgstr "7d Trading Vol"
+
+#: src/pages/claim/index.tsx
+msgid "@HarbergerToken We decided to claim #{0} officially, thank you for your appreciation and support of {1}, let's create a future together! #Harberger #Opensource #Token"
+msgstr "@HarbergerToken 我们决定正式认领 #{0}, 感谢大家对 {1} 的认可和支持，一起共创未来吧！#Harberger #Opensource #Token"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Add a sponsor"
+msgstr "添加赞助"
+
+#: src/pages/assets/index.tsx
+msgid "After multiply, the position is obtained."
+msgstr "multiply 后获得的是仓位。"
+
+#: src/pages/assets/index.tsx
+msgid "All HBG tokens"
+msgstr "所有 HBG tokens"
+
+#: src/pages/claim/index.tsx
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "All {OSP_INIT_EXCHANGE} HBG tokens are added to the Uniswap {OSP_POOL_FEE_PERCENT} pool on a single formula and will be never withdrawn."
+msgstr "所有 {OSP_INIT_EXCHANGE} HBG tokens 以单边形式加入 Uniswap {OSP_POOL_FEE_PERCENT} 的 pool，并将永远不可撤销；"
+
+#: src/pages/assets/index.tsx
+msgid "Amount"
+msgstr "数量"
+
+#: src/pages/create/index.tsx
+msgid "And as {0} price finder first, you'll be pleased to have more people invest in it!"
+msgstr "作为 {0} 的价格发现第一人，你一定乐意让更多人看到它！"
+
+#: src/components/Button/Approve.tsx
+msgid "Approve"
+msgstr "Approve"
+
+#: src/pages/create/index.tsx
+msgid "As an incentive, Create NFT are currently created with a limited time discount, based on the Ethereum gas price, but the discount will not exceed the nft price."
+msgstr "作为激励措施，目前 Create NFT 的创建有一个限时折扣。该折扣基于以太坊气体价格，但不会超过 NFT 的价格。"
+
+#: src/pages/create/index.tsx
+msgid "As the exchange rate between ${0} and $FIND can fluctuate significantly, a {1}% redundancy is added here."
+msgstr "由于 ${0} 和 $FIND 之间存在汇率波动，因此在此加入了 {1}% 的冗余保障。"
+
+#: src/components/Table/Mortgage.tsx
+msgid "Asset"
+msgstr "资产"
+
+#: src/components/Navbar/Left.tsx
+msgid "Assets"
+msgstr "资产"
+
+#: src/components/Navbar/index.tsx
+msgid "Back to home"
+msgstr "返回到主页"
+
+#: src/pages/create/index.tsx
+msgid "Back to homepage"
+msgstr "返回到主页"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Balance:"
+msgstr "余额"
+
+#: src/pages/claim/index.tsx
+msgid "Before claiming, please do the following"
+msgstr "认领前，请完成以下操作"
+
+#: src/components/Table/home.tsx
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+msgid "Buy"
+msgstr "购买"
+
+#: src/pages/assets/index.tsx
+msgid "Calculated using the all HBG token"
+msgstr "使用所有 HBG token 计算"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Cash"
+msgstr "Cash"
+
+#: src/pages/assets/index.tsx
+msgid "Cash operations will close out the entered collateral."
+msgstr "Cash 操作将结清输入的抵押物。"
+
+#: src/pages/assets/index.tsx
+msgid "Cash out"
+msgstr "兑出"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Change"
+msgstr "更换"
+
+#: src/components/Table/home.tsx
+#: src/components/Table/home.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Claim"
+msgstr "认领"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Claim NFT"
+msgstr "认领 NFT"
+
+#: src/pages/claim/index.tsx
+msgid "Claim expired, please try again"
+msgstr "认领已过期，请重新尝试"
+
+#: src/pages/claim/index.tsx
+msgid "Claimed successfully"
+msgstr "认领成功"
+
+#: src/pages/assets/index.tsx
+msgid "Collateral"
+msgstr "抵押物"
+
+#: src/components/Table/Mortgage.tsx
+msgid "Collateral Locked"
+msgstr "抵押品已锁定"
+
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Collect"
+msgstr "领取"
+
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Collectable income"
+msgstr "可领取收入"
+
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Collected"
+msgstr "已领取"
+
+#: src/components/Navbar/Left.tsx
+#: src/components/Navbar/MobileMenu.tsx
+msgid "Community"
+msgstr "社区"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Confirm"
+msgstr "确认"
+
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Connect"
+msgstr "连接"
+
+#: src/components/Button/ConnectWallet.tsx
+#: src/components/Navbar/BarWallet.tsx
+msgid "Connect Wallet"
+msgstr "连接钱包"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Connect to a wallet"
+msgstr "连接到钱包"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Connected with"
+msgstr "连接到"
+
+#: src/components/Button/Common.tsx
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+msgid "Create"
+msgstr "创建"
+
+#: src/pages/home/Search.tsx
+#: src/pages/home/index.tsx
+msgid "Create HBG token"
+msgstr "创建 HBG token"
+
+#: src/pages/create/index.tsx
+msgid "Create HBG token, hard top: {OSP_INIT_EXCHANGE}."
+msgstr "创建 HBG token，总发行量硬顶：{OSP_INIT_EXCHANGE}；"
+
+#: src/components/Table/home.tsx
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Create NFT"
+msgstr "Create NFT"
+
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Create NFT and Owner NFT are created at the same time."
+msgstr "Create NFT 和 Owner NFT 同时被创建。"
+
+#: src/components/Table/home.tsx
+msgid "Create NFT is created when the HBG token is created, and is owned by the creator for the cost of the HBG's GitHub star * 0.1$FIND, and Open source projects can be free, and the holder has the right to collect {OSP_CNFT_PERCENT} LP fee permanently."
+msgstr "Create NFT 是在创建 HBG 代币时创建的，由创建者拥有，费用为 HBG 的 GitHub star 数 * 0.1$FIND，开源方可免费，持有者永久拥有 {OSP_CNFT_PERCENT} LP fee 领取权；"
+
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Create NFT is owned by the creator for the cost of the HBG's GitHub star * 0.1$FIND, and Open source projects can be free, and the holder has the right to collect {OSP_CNFT_PERCENT} LP fee permanently."
+msgstr "Create NFT 归创建者所有，费用为 HBG 的 GitHub star 数 * 0.1$FIND，开源方可免费；持有者永久拥有 {OSP_CNFT_PERCENT} LP fee 领取权；"
+
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+msgid "Create NFT price"
+msgstr "Create NFT 价格"
+
+#: src/components/Navbar/index.tsx
+msgid "Created successfully!"
+msgstr "创建成功!"
+
+#: src/pages/create/index.tsx
+msgid "Creation completed!"
+msgstr "创建完成！"
+
+#: src/components/Box/NoticeContent.tsx
+msgid "Deals Completed"
+msgstr "交易已完成"
+
+#: src/components/Table/Mortgage.tsx
+msgid "Debt"
+msgstr "债务"
+
+#: src/pages/assets/index.tsx
+msgid "Deposit Positions"
+msgstr "仓位"
+
+#: src/pages/claim/index.tsx
+msgid "Detail steps"
+msgstr "详细步骤"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Disconnect"
+msgstr "取消连接"
+
+#: src/components/Navbar/Left.tsx
+#: src/components/Navbar/MobileMenu.tsx
+msgid "Doc"
+msgstr "文档"
+
+#: src/components/Table/Mortgage.tsx
+msgid "Earning"
+msgstr "收益"
+
+#: src/pages/assets/index.tsx
+msgid "Earning:"
+msgstr "收益"
+
+#: src/pages/detail/index.tsx
+msgid "Edit"
+msgstr "编辑"
+
+#: src/pages/claim/index.tsx
+msgid "Example:"
+msgstr "参考示例："
+
+#: src/pages/detail/index.tsx
+msgid "Finder"
+msgstr "Finder"
+
+#: src/pages/create/index.tsx
+msgid "Free for owner"
+msgstr "对持有者免费"
+
+#: src/pages/detail/index.tsx
+msgid "Go"
+msgstr "前往"
+
+#: src/components/Box/Status.tsx
+msgid "Go Back Home"
+msgstr "返回首页"
+
+#: src/pages/claim/index.tsx
+#: src/pages/create/index.tsx
+msgid "Go to"
+msgstr "前往"
+
+#: src/pages/create/index.tsx
+msgid "Go to the HBG token"
+msgstr "前往 HBG token"
+
+#: src/pages/claim/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Hard top: {OSP_INIT_EXCHANGE}."
+msgstr "总发行量硬顶：{OSP_INIT_EXCHANGE}."
+
+#: src/pages/claim/index.tsx
+msgid "Here"
+msgstr "这里"
+
+#: src/components/Dialog/History.tsx
+#: src/components/Dialog/History.tsx
+msgid "History"
+msgstr "历史"
+
+#: src/pages/assets/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "History List"
+msgstr "历史列表"
+
+#: src/pages/claim/index.tsx
+msgid "How to claim Owner NFT?"
+msgstr "如何认领 Owner NFT?"
+
+#: src/components/Link/Common.tsx
+#: src/pages/create/index.tsx
+msgid "How to create an HBG token?"
+msgstr "如何创建一个 HBG token？"
+
+#: src/pages/claim/index.tsx
+msgid "I  Click \"Claim\" button, finish the last step."
+msgstr "1. 点击“认领”按钮，完成最后一步。"
+
+#: src/pages/claim/index.tsx
+msgid "I  Click the \"Connect Wallet\" button."
+msgstr "1. 点击“连接钱包”按钮。"
+
+#: src/pages/claim/index.tsx
+msgid "I Click on the link  <0>https://discord.gg/BYEDPc9KXT</0> and enter to Discord."
+msgstr "1. 点击链接 <0>https://discord.gg/BYEDPc9KXT</0>，进入 Discord。"
+
+#: src/pages/claim/index.tsx
+msgid "I Click the twitter botton and @HarbergerToken in Twitter."
+msgstr "1. 点击分享 twitter 按钮并在 Twitter 上 @HarbergerToken。"
+
+#: src/pages/detail/index.tsx
+msgid "I You can edit the README file and change the text here."
+msgstr "1. 你可以在这里编辑 README 文件并修改文本。"
+
+#: src/pages/claim/index.tsx
+msgid "II Copy and paste the tweet link URL, and Click the \"Verify\" button."
+msgstr "2. 复制并粘贴 tweet 的链接网址，并点击\"认证\"按钮。"
+
+#: src/pages/claim/index.tsx
+msgid "II Copy the ID below and go to the <0>#get-verified</0> channel to complete the Discord verification step of the claiming Owner NFT process."
+msgstr "2. 复制下面的 ID，进入 <0>#get-verified</0> 频道，完成 claim Owner NFT 过程中的 Discord 验证步骤!"
+
+#: src/pages/detail/index.tsx
+msgid "II Enter text in the description, and text with [ ] express as title."
+msgstr "2. 输入描述文字，文字带有[ ] 代表标题。"
+
+#: src/pages/claim/index.tsx
+msgid "II Quote the link below and add it to the Sponsor list of the GitHub Repo corresponding to the current HBG token"
+msgstr "2. 引用下面的链接，并添加在当前 HBG token 对应的 GitHub Repo 的 Sponsor list 中。"
+
+#: src/pages/claim/index.tsx
+msgid "III  Click the \"Verify\" button."
+msgstr "3. 点击“认证”按钮。"
+
+#: src/pages/claim/index.tsx
+msgid "III When finished, click \"Verify\" button."
+msgstr "3. 完成后，点击“认证”按钮。"
+
+#: src/pages/create/index.tsx
+msgid "If the number of stars is less than 30, then calculate by 30 stars * 0.1$FIND"
+msgstr "若 star 数少于 30 ，则按 30 star * 0.1$FIND 计算"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/create/index.tsx
+msgid "Insufficient Balance"
+msgstr "余额不足"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Insufficient Collateral Locked"
+msgstr "锁定的抵押品不足"
+
+#: src/pages/assets/index.tsx
+msgid "It is characterized by no forced closing, no interest, no time limit, and risk-free."
+msgstr "其特点是无强平，无利息，无时间限制，并且无风险；"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "It seems your wallet is running on a different network from harberger.money. please manually change the network in your wallet, or you can click the button below."
+msgstr "你的钱包似乎运行在与 harberger.money 不同的网络上。请手动更改你钱包中的网络，或者你可以点击下面的按钮。"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Join Discord"
+msgstr "加入 Discord"
+
+#: src/pages/assets/index.tsx
+msgid "Lend out"
+msgstr "借出"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Locked:"
+msgstr "已锁定"
+
+#: src/pages/assets/index.tsx
+msgid "Manage Your Assets"
+msgstr "管理你的资产"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Maximum"
+msgstr "最大值"
+
+#: src/pages/assets/index.tsx
+#: src/pages/create/index.tsx
+msgid "Maximum multiplier"
+msgstr "最大杆杠"
+
+#: src/components/Navbar/MobileMenu.tsx
+#: src/components/Navbar/index.tsx
+msgid "Menu"
+msgstr "菜单"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Mortgage"
+msgstr "Mortgage"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Multiply"
+msgstr "Multiply"
+
+#: src/pages/create/index.tsx
+msgid "Multiply token (option)"
+msgstr "Multiply token（可选项）"
+
+#: src/pages/create/index.tsx
+msgid "NFT Discount:"
+msgstr "NFT 折扣："
+
+#: src/components/Table/home.tsx
+msgid "Name"
+msgstr "名称"
+
+#: src/pages/claim/index.tsx
+msgid "Next"
+msgstr "下一步"
+
+#: src/pages/assets/index.tsx
+msgid "No Earning"
+msgstr "无收益"
+
+#: src/pages/create/index.tsx
+msgid "Only the owner of an HBG project can get Create NFT for free."
+msgstr "只有开源项目的拥有者可以免费获得 Create NFT"
+
+#: src/components/Box/Status.tsx
+msgid "Oops, This Page Not Found!"
+msgstr "Oops, This Page Not Found!"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Oops, your wallet is not on the right network"
+msgstr "Oops，你的钱包不在正确的网络上"
+
+#: src/components/Table/home.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Open source projects are eligible to claim Owner NFT for free and thus have the right to {OSP_ONFT_PERCENT} LP fee in permanently."
+msgstr "开源项目方可免费认证领取 Owner NFT，从而永久拥有 {OSP_ONFT_PERCENT} LP fee 领取权。"
+
+#: src/pages/claim/index.tsx
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Opensea"
+msgstr "Opensea"
+
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+msgid "Original Price:"
+msgstr "原价："
+
+#: src/components/Table/home.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "Owner NFT"
+msgstr "Owner NFT"
+
+#: src/pages/detail/index.tsx
+msgid "Owner NFT holder collectable {OSP_ONFT_PERCENT} LP fees"
+msgstr "Owner NFT 持有人可领取的 {OSP_ONFT_PERCENT} LP fees"
+
+#: src/components/Select/Common.tsx
+#: src/components/Select/Common.tsx
+#: src/components/Select/Common.tsx
+msgid "Please enter Github URL first"
+msgstr "请先输入 Github URL"
+
+#: src/components/Input/Common.tsx
+msgid "Please enter a GitHub URL, e.g. http//github.com/0xfind/0xfind"
+msgstr "请输入一个 GitHub URL，如：http//github.com/0xfind/0xfind"
+
+#: src/pages/create/index.tsx
+#: src/pages/create/index.tsx
+msgid "Please enter a valid GitHub URL"
+msgstr "请输入一个有效的 GitHub URL"
+
+#: src/pages/create/index.tsx
+msgid "Please use this feature only if you clearly understand the transaction details of multiply."
+msgstr "请在明确理解 multiply 的交易细节的条件下，使用该功能。"
+
+#: src/components/Table/home.tsx
+#: src/pages/detail/index.tsx
+msgid "Price"
+msgstr "价格"
+
+#: src/components/Table/home.tsx
+msgid "Price Change"
+msgstr "价格变化"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Redeem"
+msgstr "Redeem"
+
+#: src/pages/assets/index.tsx
+msgid "Repay"
+msgstr "还回"
+
+#: src/pages/assets/index.tsx
+msgid "Risk-free definition: public chain ( Ethereum etc. ) trusted, Uniswap trusted, 0xfind smart contract no bugs."
+msgstr "无风险定义为：公链（ Ethereum 等）可信、Uniswap 可信、0xfind 智能合约没有漏洞。"
+
+#: src/components/Dialog/SelectToken.tsx
+msgid "Search name or paste address"
+msgstr "搜索名字或粘贴地址"
+
+#: src/pages/home/Search.tsx
+msgid "Search..."
+msgstr "搜索..."
+
+#: src/components/Input/Asset.tsx
+msgid "Select a token"
+msgstr "选择一个 token"
+
+#: src/components/Dialog/SelectToken.tsx
+msgid "Select token"
+msgstr "选择 token"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Sorry, claiming fail!"
+msgstr "抱歉，认领失败！"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "Swap"
+msgstr "交易"
+
+#: src/components/Navbar/MobileMenu.tsx
+msgid "Swarm Invest"
+msgstr "集智投资"
+
+#: src/components/Dialog/ConnectWallet.tsx
+msgid "Switch Network"
+msgstr "切换网络"
+
+#: src/components/Card/index.tsx
+#: src/pages/detail/index.tsx
+#: src/pages/detail/index.tsx
+msgid "TVL"
+msgstr "TVL"
+
+#: src/components/Card/index.tsx
+msgid "The HBG token has been claimed by the open source project owner"
+msgstr "这个 HBG token 已被开源项目拥有者认领。"
+
+#: src/components/Box/Status.tsx
+msgid "The link might be incorrect"
+msgstr "The link might be incorrect"
+
+#: src/components/Table/home.tsx
+msgid "The requested content has not yet been created, please try again in a few moments."
+msgstr "要求的内容尚未创建，请稍后再试。"
+
+#: src/components/Select/Common.tsx
+msgid "The same Token name already exists, would you consider replacing it?"
+msgstr "同样的 token 名称已经存在，是否考虑更换？"
+
+#: src/components/Select/Common.tsx
+msgid "The same token name already exists, would you consider replacing it?"
+msgstr "同样的 token 名称已经存在，是否考虑更换？"
+
+#: src/pages/create/index.tsx
+msgid "The token name is automatically generated, with 0x as the prefix and Github org/repo as the suffix"
+msgstr "token name 自动生成，0x 为前缀，Github org/repo 为后缀。"
+
+#: src/pages/assets/index.tsx
+msgid "There is no HBG token"
+msgstr "没有任何 HBG token"
+
+#: src/components/Dialog/History.tsx
+#: src/components/Dialog/History.tsx
+msgid "There is no history"
+msgstr "没有任何历史"
+
+#: src/components/Table/Mortgage.tsx
+msgid "There is no position"
+msgstr "没有任何仓位"
+
+#: src/components/Dialog/SelectToken.tsx
+msgid "There is no token"
+msgstr "没有任何代币"
+
+#: src/pages/create/index.tsx
+msgid "This repository has already been created"
+msgstr "这个库已经被创建"
+
+#: src/pages/create/index.tsx
+msgid "Token name"
+msgstr "Token 名称"
+
+#: src/pages/assets/index.tsx
+msgid "Total Assets"
+msgstr "总资产"
+
+#: src/pages/assets/index.tsx
+msgid "Total Earning:"
+msgstr "总收益"
+
+#: src/components/Card/index.tsx
+msgid "Total HBG"
+msgstr "Total HBG"
+
+#: src/pages/create/index.tsx
+msgid "Total amount:"
+msgstr "总计"
+
+#: src/components/Navbar/Left.tsx
+msgid "Tutorial"
+msgstr "操作指南"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Tweets"
+msgstr "发推"
+
+#: src/pages/detail/index.tsx
+msgid "Uniswap"
+msgstr "Uniswap"
+
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+#: src/pages/claim/index.tsx
+msgid "Verification failed, please try again later."
+msgstr "认证失败，请稍后再试。"
+
+#: src/pages/claim/index.tsx
+msgid "Verification success"
+msgstr "认证成功"
+
+#: src/components/Box/Claim.tsx
+msgid "Verify"
+msgstr "认证"
+
+#: src/components/Navbar/Left.tsx
+msgid "White Paper"
+msgstr "白皮书"
+
+#: src/pages/assets/index.tsx
+msgid "Withdraw"
+msgstr "取回"
+
+#: src/pages/assets/index.tsx
+msgid "You can combine the two transactions of redeeming HBG and then selling HBG into one Cash operation, so you can cash out even if you don't have $ETH and $FIND."
+msgstr "你可以把赎回 HBG token 和卖出 HBG token 这两个交易合并为一个 Cash 操作，即使你没有 $ETH 和 $FIND 也可以兑现。"
+
+#: src/pages/detail/index.tsx
+msgid "You can invest in the Harbeger token of this project!"
+msgstr "You can invest in the Harbeger token of this project!"
+
+#: src/pages/assets/index.tsx
+msgid "You can mortgage HBG token to lend $ETH or $FIND for a 0.5% fee."
+msgstr "你可以抵押 HBG token 借出 $FIND， 仅收取 0.5% 手续费；"
+
+#: src/pages/assets/index.tsx
+msgid "You can mortgage to get $ETH or $FIND, buy HBG again and keep repeating this operation. multiply combines such operations into one to save a lot of gas fee."
+msgstr "你可以 mortgage 获得 $ETH/$FIND，再次购买 HBG token，并不断重复这样的操作。multiply 将这样的操作合并为一次，以大量节省 gas fees。"
+
+#: src/pages/assets/index.tsx
+msgid "You can repay $ETH or $FIND and withdraw the mortgaged HBG tokens."
+msgstr "你可以偿还 $ETH 或 $FIND 并提取抵押的 HBG token。"
+
+#: src/pages/claim/index.tsx
+msgid "e.g.https://twitter.com/HarbergerToken/status/1234567890123456789"
+msgstr "如：https://twitter.com/HarbergerToken/status/1234567890123456789"
+
+#: src/pages/create/index.tsx
+msgid "example"
+msgstr "案例"
+
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+#: src/pages/assets/index.tsx
+msgid "get"
+msgstr "获得"
+
+#: src/components/Button/Approve.tsx
+#: src/pages/assets/index.tsx
+msgid "transaction link"
+msgstr "transaction link"

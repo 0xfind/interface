@@ -1,0 +1,109 @@
+name: Push IPFS
+on:
+  workflow_dispatch:
+
+jobs:
+
+  deploy_ipfs:
+    name: Deploy IPFS
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org
+          cache: 'yarn'
+      
+      - name: Install Cache
+        uses: actions/cache@v3
+        id: install-cache
+        with:
+          path: node_modules/
+          key: ${{ runner.os }}-install-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Refresh Cache
+        if: steps.install-cache.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile --ignore-scripts
+        shell: bash
+
+      - name: Create main env file
+        if: github.ref == format('refs/heads/{0}', 'main')
+        run: |
+          touch .env
+
+      - name: Create develop env file
+        if: github.ref == format('refs/heads/{0}', 'develop')
+        run: |
+          touch .env
+
+      - name: Create test env file
+        if: github.ref == format('refs/heads/{0}', 'test')
+        run: |
+          touch .env
+
+      - name: Build Prepare
+        run: yarn postinstall
+
+      - name: Build the IPFS bundle
+        env:
+          CI: false
+        run: yarn build
+
+      - name: Pin to Pinata
+        id: pinata
+        uses: anantaramdas/ipfs-pinata-deploy-action@39bbda1ce1fe24c69c6f57861b8038278d53688d
+        with:
+          pin-name: 0xfind-${{ github.sha }}
+          path: './build'
+          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
+          pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
+      
+      - name: Pin to Web3.storage
+        id: web3_storage
+        uses: web3-storage/add-to-web3@v2
+        with:
+          web3_token: ${{ secrets.WEB3_STORAGE_TOKEN }}
+          path_to_add: 'build'
+
+      - name: Convert CIDv0 to CIDv1
+        id: convert_cidv0
+        uses: uniswap/convert-cidv0-cidv1@v1.0.0
+        with:
+          cidv0: ${{ steps.web3_storage.outputs.cid }}
+
+      # - name: Update DNS with new IPFS hash
+      #   if: github.ref == format('refs/heads/{0}', 'develop')
+      #   run: |
+      #     curl -X PUT "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_TOKEN }}/dns_records/${{ secrets.CLOUDFLARE_TEST_DNS }}" \
+      #     -H "Content-Type:application/json" \
+      #     -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}"
+      #     --data '{"type":"CNAME","name":"test.harberger.money","content":"${{ steps.web3_storage.outputs.url }}","ttl":1,"proxied":true}'
+
+      - name: Commit Comment
+        uses: actions/github-script@v6
+        env:
+          COMMENT_BODY: |
+            IPFS hash of the deployment:
+            - CIDv0: `${{ steps.web3_storage.outputs.cid }}`
+            - CIDv1: `${{ steps.convert_cidv0.outputs.cidv1 }}`
+
+            IPFS gateways:
+            - https://${{ steps.convert_cidv0.outputs.cidv1 }}.ipfs.dweb.link/
+            - https://${{ steps.convert_cidv0.outputs.cidv1 }}.ipfs.cf-ipfs.com/
+            - [ipfs://${{ steps.web3_storage.outputs.cid }}/](ipfs://${{ steps.web3_storage.outputs.cid }}/)
+        with:
+          script: |
+            const { COMMENT_BODY: body } = process.env
+            github.rest.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+              body
+            })
+
+

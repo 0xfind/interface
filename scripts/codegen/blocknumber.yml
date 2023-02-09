@@ -1,0 +1,8 @@
+schema: 'https://api.thegraph.com/subgraphs/name/iliaazhel/mumbai-blocks'
+documents: 'src/graphql/blocknumber/!(*.d).{ts,tsx,graphql}'
+generates:
+  ./src/graphql/blocknumber/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo

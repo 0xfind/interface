@@ -1,0 +1,8 @@
+schema: 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3'
+documents: 'src/graphql/uniswap/!(*.d).{ts,tsx,graphql}'
+generates:
+  ./src/graphql/uniswap/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo

@@ -1,0 +1,4 @@
+/src/**/**/generated.ts
+/src/abis/types
+src/locales/**/*.js
+src/locales/**/*.po

@@ -1,0 +1,8 @@
+schema: 'https://api.thegraph.com/subgraphs/name/0xfind/find-v1-eth'
+documents: 'src/graphql/find/!(*.d).{ts,tsx,graphql}'
+generates:
+  ./src/graphql/find/generated.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo

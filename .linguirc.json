@@ -1,0 +1,21 @@
+{
+  "catalogs": [
+    {
+      "path": "src/locales/{locale}/messages",
+      "include": ["src"],
+      "exclude": [
+        "**/node_modules/**"
+      ]
+    }
+  ],
+  "format": "po",
+  "formatOptions": {
+    "lineNumbers": false
+  },
+  "orderBy": "messageId",
+  "fallbackLocales": {
+    "default": "en"
+  },
+  "locales": ["en", "zh"],
+  "sourceLocale": "en"
+}
