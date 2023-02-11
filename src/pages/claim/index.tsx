@@ -440,17 +440,10 @@ const Claim = () => {
                   {nftLoading ? <Skeleton variant="rectangular" width={232} height={376} /> : <img src={onftURI} alt="onft" height={"100%"} /> }
                 </Box>
                 <Stack justifyContent={"flex-end"}>
-                  <Stack direction={"row"} spacing={"8px"} alignItems={"center"} sx={{
-                    color: "inuse.blacktext"
-                  }}>
-                    <Link sx={{ fontWeight: 500, fontSize: "12px", lineHeight: "18px", color: "inuse.blacktext" }} target={"_blank"} underline="none" href={getOpenseaLink(chainId, token?.onft?.id)} >
-                      <Trans>Opensea</Trans>
-                    </Link>
-                    <ArrowCircleRightOutlinedIcon sx={{
-                      fontSize: "18px",
-                      cursor: "pointer",
-                    }} />
-                  </Stack>
+                  <Link sx={{ fontWeight: 500, fontSize: "12px", lineHeight: "18px", color: "inuse.blacktext", cursor: "pointer", display: "flex", flexDirection: "row", alignItems: "center" }} target={"_blank"} underline="none" href={getOpenseaLink(chainId, token?.onft?.id)} >
+                    <Box sx={{ mr: "8px" }}><Trans>Opensea</Trans></Box>
+                    <ArrowCircleRightOutlinedIcon sx={{ fontSize: "18px" }} />
+                  </Link>
                 </Stack>
               </Stack>
               <ContentRaw><Trans>I  Click "Claim" button, finish the last step.</Trans></ContentRaw>
