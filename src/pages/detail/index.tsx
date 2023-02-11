@@ -347,14 +347,10 @@ const Detail = () => {
               }}>
                 {nftLoading ? <Skeleton variant="rectangular" width={232} height={400} /> : <img width={'232px'} height={'400px'} src={onftURI} alt="onft" />}
               </Box>
-              <Stack direction={'row'} spacing={"8px"} alignItems={"center"} justifyContent={"begin"} sx={{
-                fontWeight: 500, cursor: "pointer"
-              }} onClick={() => {}}>
-                <Link sx={{ color: "inuse.blacktext" }} target={"_blank"} underline="none" href={getOpenseaLink(chainId, tokenInfo?.ownerNFTId)} >
-                  <Trans>Opensea</Trans>
-                </Link>
+              <Link sx={{ color: "inuse.blacktext", display: "flex", verticalAlign: "center", flexDirection: "row", alignItems: "center", fontWeight: 500, cursor: "pointer" }} target={"_blank"} underline="none" href={getOpenseaLink(chainId, tokenInfo?.ownerNFTId)}>
+                <Box sx={{ mr: "8px" }}><Trans>Opensea</Trans></Box>
                 <ArrowCircleRightOutlinedIcon />
-              </Stack>
+              </Link>
             </Stack>
             <Stack sx={{ width: '100%' }} spacing={'10px'}>
               <Stack>
@@ -400,14 +396,10 @@ const Detail = () => {
               }}>
                 {nftLoading ? <Skeleton variant="rectangular" width={232} height={400} /> : <img width={'232px'} height={'400px'} src={cnftURI} alt="cnft" />}
               </Box>
-              <Stack direction={'row'} spacing={"8px"} alignItems={"center"} justifyContent={"begin"} sx={{
-                fontWeight: 500, cursor: "pointer"
-              }} onClick={() => { }}>
-                <Link sx={{ color: "inuse.blacktext" }} target={"_blank"} underline="none" href={getOpenseaLink(chainId, tokenInfo?.createNFTId)} >
-                  <Trans>Opensea</Trans>
-                </Link>
+              <Link sx={{ color: "inuse.blacktext", display: "flex", verticalAlign: "center", flexDirection: "row", alignItems: "center", fontWeight: 500, cursor: "pointer" }} target={"_blank"} underline="none" href={getOpenseaLink(chainId, tokenInfo?.createNFTId)} >
+                <Box sx={{ mr: "8px" }}><Trans>Opensea</Trans></Box>
                 <ArrowCircleRightOutlinedIcon />
-              </Stack>
+              </Link>
             </Stack>
             <Stack sx={{ width: '100%' }} spacing={'10px'}>
               <Stack>
