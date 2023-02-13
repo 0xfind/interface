@@ -8,7 +8,7 @@ export enum SupportedChainId {
 export const DEFAULT_CHAINID = parseInt((process.env.REACT_APP_DEFAULT_CHAINID || SupportedChainId.MAINNET.toString())) as any
 
 export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
-  // SupportedChainId.GOERLI,
+  SupportedChainId.GOERLI,
   SupportedChainId.MAINNET,
 ];
 
