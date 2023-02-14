@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from "react"
 import numbro from "numbro"
-import { SupportedCurrency } from "../constants/currency"
+import { CurrencyPosition, CurrencySymbol, SupportedCurrency } from "../constants/currency"
 import { useAppSelector } from "../state/hooks"
 
 function useCurrency({ base, value, average, digits }: {
@@ -23,8 +23,8 @@ function useCurrency({ base, value, average, digits }: {
     return value || 0
   }, [value])
 
-  const currencySymbol = useMemo(() => currentCurrency === SupportedCurrency.USD ? "$" : currentCurrency.toUpperCase(), [currentCurrency])
-  const currencyPosition = useMemo(() => currentCurrency === SupportedCurrency.USD ? "prefix" : "postfix", [currentCurrency])
+  const currencySymbol = useMemo(() => CurrencySymbol[currentCurrency], [currentCurrency])
+  const currencyPosition = useMemo(() => CurrencyPosition[currentCurrency], [currentCurrency])
 
   const formatCurrencyFn: (num: number) => [string, string, boolean] = useCallback((
     num: number,
