@@ -82,30 +82,38 @@ export type TokenDetailResult = {
 }
 
 export function useDetailToken(address: string, chainId: SupportedChainId, pollInterval?: number): TokenDetailResult {
+  const [loading, setLoading] = useState<boolean>(true)
   const findClient = useFindClient()
-  const { data, loading, error } = useTokensByAddressesQuery({
+  const { data, loading: queryLoading, error } = useTokensByAddressesQuery({
     variables: { addresses: [address] },
     pollInterval,
     client: findClient
-  });
-  const result = useTokens(data?.tokens as any || [], loading, chainId, "", { withLPFee: true })
+  })
+  const result = useTokens(data?.tokens as any || [], queryLoading, chainId, "", { withLPFee: true })
+  useEffect(() => {
+    if (!queryLoading && !result.isLoading) setLoading(false)
+  }, [queryLoading, result.isLoading])
   return useMemo(() => ({
-    isLoading: loading || result.isLoading,
+    isLoading: loading,
     isError: !!error || result.isError,
     datum: result.data.length === 1 ? result.data[0] : undefined,
-  }), [error, loading, result.data, result.isError, result.isLoading]);
+  }), [error, loading, result.data, result.isError]);
 }
 
 export function useAllTokens(searchKeyword: string, chainId: SupportedChainId, pollInterval?: number): TokenResult {
-  const { data, loading, error } = useAllTokensQuery(
+  const [loading, setLoading] = useState<boolean>(true)
+  const { data, loading: queryLoading, error } = useAllTokensQuery(
     {
       pollInterval,
       client: useFindClient()
-    },
+    }
   );
-  const result = useTokens(data?.tokens as any || [], loading, chainId, searchKeyword, { withLPFee: true })
+  const result = useTokens(data?.tokens as any || [], queryLoading, chainId, searchKeyword, { withLPFee: true })
+  useEffect(() => {
+    if (!queryLoading && !result.isLoading) setLoading(false)
+  }, [queryLoading, result.isLoading])
   return useMemo(() => ({
-    isLoading: loading || result.isLoading,
+    isLoading: loading,
     isError: !!error || result.isError,
     data: result.data,
     searchedData: result.searchedData,
@@ -115,14 +123,16 @@ export function useAllTokens(searchKeyword: string, chainId: SupportedChainId, p
 }
 
 export function useAllMortgageTokens(chainId: SupportedChainId) {
-  const { data, loading, error } = useAllTokensQuery({
+  const [loading, setLoading] = useState<boolean>(true)
+  const { data, loading: queryLoading, error } = useAllTokensQuery({
     client: useFindClient()
   })
-
-  const result = useTokens(data?.tokens as any || [], loading, chainId, "", { withLPFee: false })
-
+  const result = useTokens(data?.tokens as any || [], queryLoading, chainId, "", { withLPFee: false })
+  useEffect(() => {
+    if (!queryLoading && !result.isLoading) setLoading(false)
+  }, [queryLoading, result.isLoading])
   return useMemo(() => ({
-    isLoading: loading || result.isLoading,
+    isLoading: loading,
     isError: error || result.isError,
     data: result.data,
     searchedData: result.searchedData,
@@ -141,7 +151,7 @@ function parsedTokenData(tokens: any) {
   }, {})
 }
 
-export function useTokens(tokens: Token[], tokenLoading: boolean, chainId: SupportedChainId, searchKeyword: string, options: TokenOptions): TokenResult {
+function useTokens(tokens: Token[], tokenLoading: boolean, chainId: SupportedChainId, searchKeyword: string, options: TokenOptions): TokenResult {
   const { withLPFee } = useMemo(() => options, [options])
   const tokenAddresses = useMemo(() => tokens.map((t) => (t.id.toLowerCase())), [tokens])
 
