@@ -39,6 +39,7 @@ import { useCollectFeeHistoriesLazyQuery, useTokenDetailQuery } from "../../grap
 import { getOpenseaLink, getPoolInfoLink, getScanLink, getSwapLink, SCANNAME } from "../../constants/link";
 import { OSP_CNFT_PERCENT, OSP_INIT_EXCHANGE, OSP_ONFT_PERCENT, OSP_POOL_FEE_PERCENT } from "../../constants";
 import { Status404 } from "../../components/Box/Status";
+import { ScaleLoader } from "react-spinners";
 
 const findBadge = (symbol?: string, github?: string, logo?: ReactElement) => (<Button variant="contained" disableElevation sx={{
   borderRadius: "16px",
@@ -446,7 +447,7 @@ const Detail = () => {
                 }}
               >
                 <Box>
-                  {(githubInfoLoading && !githubInfo?.logo) ? <Skeleton animation="wave" variant="circular" width={45} height={45} /> : <CommonTooltip 
+                  {(githubInfoLoading || !githubInfo?.logo) ? <Skeleton animation="wave" variant="circular" width={45} height={45} /> : <CommonTooltip 
                     title={<Box>{tokenInfo?.name} <Box sx={{ color: "inuse.graytext" }}>{tokenInfo?.github.replace("https://", "")}</Box></Box>} 
                     placement="top">
                       <img
@@ -460,12 +461,12 @@ const Detail = () => {
                 </Box>
                 <Box sx={{ display: "flex", flexDirection: "column", ml: "14px",}}>
                   <Stack sx={{ fontWeight: 700 }} direction="row" alignItems={"center"} justifyContent={"flex-start"} spacing={"14px"}>
-                    <Link underline={"none"} color={'black'} href={tokenInfo?.github} target={"_blank"} rel={"noreferrer"} sx={{
+                    {(githubInfoLoading || !githubInfo) ? <Skeleton variant="text" height="24px" width="70px" /> : <Link underline={"none"} color={'black'} href={tokenInfo?.github} target={"_blank"} rel={"noreferrer"} sx={{
                       "&:hover": { color: "inuse.linktext" }
-                    }}>{tokenInfo?.name}</Link>
+                    }}>{tokenInfo?.name}</Link>}
                     <AddressCopyText text={tokenId || ''} content={`${tokenId?.substring(0, 6)}...${tokenId?.slice(-4)}`} copy={copy} />
                   </Stack>
-                  {(githubInfoLoading && !githubInfo) ? <Skeleton variant="text" /> : <Stack
+                  {(githubInfoLoading || !githubInfo) ? <Skeleton variant="text" /> : <Stack
                     direction={"row"}
                     spacing={1}
                     sx={{
@@ -509,7 +510,7 @@ const Detail = () => {
                   </Stack>}
                 </Box>
               </Box>
-              {((githubInfoLoading && !githubInfo) || (tokenLoading && !tokenInfo)) ? <Skeleton variant="rectangular" sx={{ mt: '50px' }} height={100} /> :  <>
+              {(githubInfoLoading || !githubInfo) ? <Skeleton variant="rectangular" sx={{ mt: '50px' }} height={150} /> :  <>
                 <Box sx={{ mt: "50px", fontWeight: 700, fontSize: "2rem" }}>
                   {githubInfo?.title || (
                     <Trans>You can invest in the Harbeger token of this project!</Trans>
@@ -555,20 +556,22 @@ const Detail = () => {
                   }}
                 >
                   <Stack alignItems={"baseline"} direction={"row"} sx={{ fontWeight: 500, fontSize: "1.5rem" }}>
-                    {currencyDom(priceSymbolPosition, priceSymbol, priceCurrency, priceCurrencyUnit, priceIsSmall, "3rem")}
-                    <Stack direction={"row"} spacing={"3px"} alignItems={"center"} sx={{
-                      fontSize: "1rem", ml: "16px"
-                    }}>
-                      <Box sx={{ fontSize: "1rem" }}>(</Box>
-                      {(tokenInfo?.priceChange && tokenInfo?.priceChange < 0) ? <LongArrowDownIcon sx={{ width: "8px", height: "13px" }} /> : <LongArrowUpIcon sx={{ width: "8px", height: "13px" }} />}
-                      <Box sx={{
-                        color: `${(tokenInfo?.priceChange && tokenInfo?.priceChange < 0)
-                          ? "inuse.error"
-                          : "inuse.primary"
-                          }`,
-                      }}>{formatPriceChange(Math.abs(tokenInfo?.priceChange || 0))}</Box>
-                      <Box sx={{ fontSize: "1rem" }}>)</Box>
-                    </Stack>
+                    {tokenLoading ? <Box sx={{ mt: "12px", mb: "12px" }}><ScaleLoader height="44" /></Box> : <>
+                      {currencyDom(priceSymbolPosition, priceSymbol, priceCurrency, priceCurrencyUnit, priceIsSmall, "3rem")}
+                      <Stack direction={"row"} spacing={"3px"} alignItems={"center"} sx={{
+                        fontSize: "1rem", ml: "16px"
+                      }}>
+                        <Box sx={{ fontSize: "1rem" }}>(</Box>
+                        {(tokenInfo?.priceChange && tokenInfo?.priceChange < 0) ? <LongArrowDownIcon sx={{ width: "8px", height: "13px" }} /> : <LongArrowUpIcon sx={{ width: "8px", height: "13px" }} />}
+                        <Box sx={{
+                          color: `${(tokenInfo?.priceChange && tokenInfo?.priceChange < 0)
+                            ? "inuse.error"
+                            : "inuse.primary"
+                            }`,
+                        }}>{formatPriceChange(Math.abs(tokenInfo?.priceChange || 0))}</Box>
+                        <Box sx={{ fontSize: "1rem" }}>)</Box>
+                      </Stack>
+                    </>}
                   </Stack>
                   <Stack direction={'row'} alignItems={'center'} spacing={"8px"}>
                     <Button
@@ -600,7 +603,9 @@ const Detail = () => {
                 </Box>
                 <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
                   <Stack direction={"row"} sx={{ fontWeight: 500, fontSize: "1.125rem" }} alignItems={"baseline"} >
-                    {currencyDom(ownerNFTSymbolPosition, ownerNFTSymbol, ownerNFTCurrency, ownerNFTCurrencyUnit, ownerNFTIsSmall, "2.25rem")}
+                    {tokenLoading ? <Box sx={{ mt: "8px", mb: "8px" }}><ScaleLoader height="32" /></Box> : <>
+                      {currencyDom(ownerNFTSymbolPosition, ownerNFTSymbol, ownerNFTCurrency, ownerNFTCurrencyUnit, ownerNFTIsSmall, "2.25rem")}
+                    </>}
                   </Stack>
                   <Box>
                     <Button disableElevation onClick={() => setONFTDialog(true)} sx={{ color: "inuse.linktext" }}>
@@ -619,7 +624,9 @@ const Detail = () => {
                 </Box>
                 <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
                   <Stack direction={"row"} sx={{ fontWeight: 500, fontSize: "1.125rem" }} alignItems={"baseline"}>
-                    {currencyDom(createNFTSymbolPosition, createNFTSymbol, createNFTCurrency, createNFTCurrencyUnit, createNFTIsSmall, "2.25rem")}
+                    {tokenLoading ? <Box sx={{ mt: "8px", mb: "8px" }}><ScaleLoader height="32" /></Box> : <>
+                      {currencyDom(createNFTSymbolPosition, createNFTSymbol, createNFTCurrency, createNFTCurrencyUnit, createNFTIsSmall, "2.25rem")}
+                    </>}
                   </Stack>
                   <Box>
                     <Button disableElevation onClick={() => setCNFTDialog(true)} sx={{ color: "inuse.linktext" }}><Trans>Collect</Trans></Button>
