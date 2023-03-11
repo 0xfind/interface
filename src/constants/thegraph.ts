@@ -26,7 +26,7 @@ export const FIND_CHAIN_SUBGRAPH_URL: Record<number, string> = {
 
 export const UNISWAP_CHAIN_SUBGRAPH_URL: Record<number, string> = {
   [SupportedChainId.GOERLI]:
-    "https://api.thegraph.com/subgraphs/name/0xfind/uniswap-v3-goerli",
+    "https://api.thegraph.com/subgraphs/name/0xfind/uniswap-v3-goerli-2",
   [SupportedChainId.MAINNET]:
     "https://api.thegraph.com/subgraphs/name/0xfind/uniswap-v3-eth",
 };
